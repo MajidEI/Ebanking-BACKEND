@@ -1,0 +1,664 @@
+2021-06-23 14:46:43.708  INFO 6268 --- [main] ma.ensa.banki.BankiApplicationTests      : Starting BankiApplicationTests using Java 1.8.0_281 on PCDESKTOP with PID 6268 (started by PC in C:\Users\PC\Desktop\22222222222222224\PROJECT\BACKEND)
+2021-06-23 14:46:43.718  INFO 6268 --- [main] ma.ensa.banki.BankiApplicationTests      : No active profile set, falling back to default profiles: default
+2021-06-23 14:46:43.980 DEBUG 6268 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1cdc4c27
+2021-06-23 14:46:44.538  WARN 6268 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-06-23 14:46:49.035  INFO 6268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-23 14:46:49.526  INFO 6268 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 445 ms. Found 14 JPA repository interfaces.
+2021-06-23 14:46:53.334  INFO 6268 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-23 14:46:53.670  INFO 6268 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-06-23 14:46:54.319  INFO 6268 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-23 14:46:55.494  INFO 6268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-23 14:46:56.088  INFO 6268 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-23 14:46:56.158  INFO 6268 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-06-23 14:46:56.873  WARN 6268 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000499: Using @AttributeOverride or @AttributeOverrides in conjunction with entity inheritance is not supported: ma.ensa.banki.entities.Admin. The overriding definitions are ignored.
+2021-06-23 14:46:57.022  WARN 6268 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000499: Using @AttributeOverride or @AttributeOverrides in conjunction with entity inheritance is not supported: ma.ensa.banki.entities.Agent. The overriding definitions are ignored.
+2021-06-23 14:46:57.028  WARN 6268 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000499: Using @AttributeOverride or @AttributeOverrides in conjunction with entity inheritance is not supported: ma.ensa.banki.entities.Client. The overriding definitions are ignored.
+2021-06-23 14:47:01.380  INFO 6268 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-23 14:47:01.435  INFO 6268 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-23 14:47:03.640  WARN 6268 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-23 14:47:09.790 DEBUG 6268 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 67 mappings in 'requestMappingHandlerMapping'
+2021-06-23 14:47:10.576  INFO 6268 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-23 14:47:11.952  INFO 6268 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13866865, org.springframework.security.web.context.SecurityContextPersistenceFilter@7a569672, org.springframework.security.web.header.HeaderWriterFilter@7fad28ac, org.springframework.web.filter.CorsFilter@4891d727, org.springframework.security.web.authentication.logout.LogoutFilter@6636448b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7872e91f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@14c18a6a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@550574cb, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5c1687d1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@194eae3e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5d202dc4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e7113f8, org.springframework.security.web.session.SessionManagementFilter@1bb51492, org.springframework.security.web.access.ExceptionTranslationFilter@2eea4441, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5b71af0d]
+2021-06-23 14:47:13.533 DEBUG 6268 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-06-23 14:47:13.974 DEBUG 6268 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-06-23 14:47:14.040 DEBUG 6268 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-06-23 14:47:14.996  INFO 6268 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-06-23 14:47:15.125  INFO 6268 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-06-23 14:47:15.344  INFO 6268 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-06-23 14:47:15.956  INFO 6268 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAgentsUsingGET_1
+2021-06-23 14:47:15.965  INFO 6268 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByUsernameUsingGET_1
+2021-06-23 14:47:16.037  INFO 6268 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByUsernameUsingGET_2
+2021-06-23 14:47:16.050  INFO 6268 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getClientsUsingGET_1
+2021-06-23 14:47:16.123  INFO 6268 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getComptesUsingGET_1
+2021-06-23 14:47:16.304  INFO 6268 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllOperateursUsingGET_1
+2021-06-23 14:47:16.310  INFO 6268 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOperationsUsingGET_1
+2021-06-23 14:47:16.359  INFO 6268 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOperationsUsingGET_2
+2021-06-23 14:47:16.550  INFO 6268 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRechargesUsingGET_1
+2021-06-23 14:47:16.646  INFO 6268 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getVirementsUsingGET_1
+2021-06-23 14:47:16.665  INFO 6268 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addVirementUsingPOST_1
+2021-06-23 14:47:16.720  INFO 6268 --- [main] ma.ensa.banki.BankiApplicationTests      : Started BankiApplicationTests in 34.618 seconds (JVM running for 38.027)
+2021-06-23 14:47:16.724  INFO 6268 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-23 14:47:16.734  INFO 6268 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-23 14:47:29.368  INFO 15864 --- [main] ma.ensa.banki.BankiApplication           : Starting BankiApplication using Java 1.8.0_281 on PCDESKTOP with PID 15864 (C:\Users\PC\Desktop\22222222222222224\PROJECT\BACKEND\target\classes started by PC in C:\Users\PC\Desktop\22222222222222224\PROJECT\BACKEND)
+2021-06-23 14:47:29.374  INFO 15864 --- [main] ma.ensa.banki.BankiApplication           : No active profile set, falling back to default profiles: default
+2021-06-23 14:47:29.608  WARN 15864 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-06-23 14:47:31.372  INFO 15864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-23 14:47:31.605  INFO 15864 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 211 ms. Found 14 JPA repository interfaces.
+2021-06-23 14:47:32.482  INFO 15864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-06-23 14:47:32.503  INFO 15864 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-23 14:47:32.504  INFO 15864 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-23 14:47:32.679  INFO 15864 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-23 14:47:32.680  INFO 15864 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3234 ms
+2021-06-23 14:47:33.029  INFO 15864 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-23 14:47:33.107  INFO 15864 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-06-23 14:47:33.304  INFO 15864 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-23 14:47:33.638  INFO 15864 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-23 14:47:33.809  INFO 15864 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-23 14:47:33.829  INFO 15864 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-06-23 14:47:34.123  WARN 15864 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000499: Using @AttributeOverride or @AttributeOverrides in conjunction with entity inheritance is not supported: ma.ensa.banki.entities.Admin. The overriding definitions are ignored.
+2021-06-23 14:47:34.161  WARN 15864 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000499: Using @AttributeOverride or @AttributeOverrides in conjunction with entity inheritance is not supported: ma.ensa.banki.entities.Agent. The overriding definitions are ignored.
+2021-06-23 14:47:34.165  WARN 15864 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000499: Using @AttributeOverride or @AttributeOverrides in conjunction with entity inheritance is not supported: ma.ensa.banki.entities.Client. The overriding definitions are ignored.
+2021-06-23 14:47:35.881  INFO 15864 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-23 14:47:35.904  INFO 15864 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-23 14:47:36.796  WARN 15864 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-23 14:47:38.278 DEBUG 15864 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 67 mappings in 'requestMappingHandlerMapping'
+2021-06-23 14:47:38.364  INFO 15864 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-23 14:47:38.644  INFO 15864 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4258106, org.springframework.security.web.context.SecurityContextPersistenceFilter@418d1c03, org.springframework.security.web.header.HeaderWriterFilter@5151accb, org.springframework.web.filter.CorsFilter@64ef2719, org.springframework.security.web.authentication.logout.LogoutFilter@13ebccd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2ccecae2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@20171cdc, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7b423f90, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@17d19538, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7305cfb1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3883b5e9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24f3fb87, org.springframework.security.web.session.SessionManagementFilter@7c56c911, org.springframework.security.web.access.ExceptionTranslationFilter@42b500aa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2d3bb944]
+2021-06-23 14:47:38.993 DEBUG 15864 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-06-23 14:47:39.079 DEBUG 15864 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-06-23 14:47:39.099 DEBUG 15864 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-06-23 14:47:39.239  INFO 15864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-06-23 14:47:39.241  INFO 15864 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-06-23 14:47:39.548  INFO 15864 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-06-23 14:47:39.627  INFO 15864 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-06-23 14:47:39.901  INFO 15864 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAgentsUsingGET_1
+2021-06-23 14:47:39.905  INFO 15864 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByUsernameUsingGET_1
+2021-06-23 14:47:39.962  INFO 15864 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByUsernameUsingGET_2
+2021-06-23 14:47:39.968  INFO 15864 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getClientsUsingGET_1
+2021-06-23 14:47:40.010  INFO 15864 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getComptesUsingGET_1
+2021-06-23 14:47:40.167  INFO 15864 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllOperateursUsingGET_1
+2021-06-23 14:47:40.176  INFO 15864 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOperationsUsingGET_1
+2021-06-23 14:47:40.198  INFO 15864 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOperationsUsingGET_2
+2021-06-23 14:47:40.247  INFO 15864 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRechargesUsingGET_1
+2021-06-23 14:47:40.262  INFO 15864 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getVirementsUsingGET_1
+2021-06-23 14:47:40.284  INFO 15864 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addVirementUsingPOST_1
+2021-06-23 14:47:40.330  INFO 15864 --- [main] ma.ensa.banki.BankiApplication           : Started BankiApplication in 12.216 seconds (JVM running for 15.424)
+2021-06-23 14:47:40.333  INFO 15864 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-23 14:47:40.337  INFO 15864 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-23 16:06:53.765  INFO 15864 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-23 16:06:53.781  INFO 15864 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-23 16:06:53.798 DEBUG 15864 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-06-23 16:06:53.801 DEBUG 15864 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2021-06-23 16:06:53.803 DEBUG 15864 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2021-06-23 16:06:53.898 DEBUG 15864 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7bde704a
+2021-06-23 16:06:53.901 DEBUG 15864 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6da9541c
+2021-06-23 16:06:53.902 DEBUG 15864 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='true': request parameters and headers will be shown which may lead to unsafe logging of potentially sensitive data
+2021-06-23 16:06:53.902  INFO 15864 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 119 ms
+2021-06-23 16:06:54.165 DEBUG 15864 --- [http-nio-8081-exec-2] o.s.web.cors.DefaultCorsProcessor        : Reject: 'https://ebanking-front-admin.vercel.app' origin is not allowed
+2021-06-23 16:06:54.158 DEBUG 15864 --- [http-nio-8081-exec-1] o.s.web.cors.DefaultCorsProcessor        : Reject: 'https://ebanking-front-admin.vercel.app' origin is not allowed
+2021-06-23 16:28:24.051 DEBUG 15864 --- [http-nio-8081-exec-5] o.s.web.cors.DefaultCorsProcessor        : Reject: 'https://ebanking-front-client.vercel.app' origin is not allowed
+2021-06-23 16:28:29.408 DEBUG 15864 --- [http-nio-8081-exec-6] o.s.web.cors.DefaultCorsProcessor        : Reject: 'https://ebanking-front-client.vercel.app' origin is not allowed
+2021-06-23 16:28:30.555 DEBUG 15864 --- [http-nio-8081-exec-7] o.s.web.cors.DefaultCorsProcessor        : Reject: 'https://ebanking-front-client.vercel.app' origin is not allowed
+2021-06-23 18:08:04.243 DEBUG 15864 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/client/username/majid", parameters={}
+2021-06-23 18:08:04.285 DEBUG 15864 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.ClientController#getByUsername(String)
+2021-06-23 18:08:04.655 DEBUG 15864 --- [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 18:08:04.931 DEBUG 15864 --- [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 18:08:04.981 DEBUG 15864 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 18:08:05.149 DEBUG 15864 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/client/username/majid", parameters={}
+2021-06-23 18:08:05.153 DEBUG 15864 --- [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.ClientController#getByUsername(String)
+2021-06-23 18:08:05.165 DEBUG 15864 --- [http-nio-8081-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 18:08:05.246 DEBUG 15864 --- [http-nio-8081-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 18:08:05.249 DEBUG 15864 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 18:08:05.742 DEBUG 15864 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/client/5/comptes", parameters={}
+2021-06-23 18:08:05.747 DEBUG 15864 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.ClientController#getComptes(Long)
+2021-06-23 18:08:06.142 DEBUG 15864 --- [http-nio-8081-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 18:08:06.207 DEBUG 15864 --- [http-nio-8081-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 18:08:06.223 DEBUG 15864 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 18:08:13.459 DEBUG 15864 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/comptes?id=8", parameters={id:[8]}
+2021-06-23 18:08:13.460 DEBUG 15864 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.CompteController#getComptes(Long)
+2021-06-23 18:08:13.504 DEBUG 15864 --- [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 18:08:13.544 DEBUG 15864 --- [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 18:08:13.547 DEBUG 15864 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 18:08:33.154 DEBUG 15864 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/operateurs", parameters={}
+2021-06-23 18:08:33.203 DEBUG 15864 --- [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-06-23 18:08:33.228 DEBUG 15864 --- [http-nio-8081-exec-7] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2021-06-23 18:08:33.228 DEBUG 15864 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2021-06-23 18:08:33.230 DEBUG 15864 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2021-06-23 18:08:33.236 DEBUG 15864 --- [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2021-06-23 18:08:33.305 DEBUG 15864 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/comptes?id=8", parameters={id:[8]}
+2021-06-23 18:08:33.306 DEBUG 15864 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.CompteController#getComptes(Long)
+2021-06-23 18:08:33.312 DEBUG 15864 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 18:08:33.312 DEBUG 15864 --- [http-nio-8081-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Jun 23 18:08:33 WEST 2021, status=404, error=Not Found, path=/operateurs}]
+2021-06-23 18:08:33.361 DEBUG 15864 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2021-06-23 18:08:33.379 DEBUG 15864 --- [http-nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 18:08:33.413 DEBUG 15864 --- [http-nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 18:08:33.418 DEBUG 15864 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 18:10:09.363 DEBUG 15864 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/client/5/comptes", parameters={}
+2021-06-23 18:10:09.377 DEBUG 15864 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.ClientController#getComptes(Long)
+2021-06-23 18:10:09.434 DEBUG 15864 --- [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 18:10:10.202 DEBUG 15864 --- [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 18:10:10.210 DEBUG 15864 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 18:10:39.425 DEBUG 15864 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/client/5/comptes", parameters={}
+2021-06-23 18:10:39.430 DEBUG 15864 --- [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.ClientController#getComptes(Long)
+2021-06-23 18:10:39.458 DEBUG 15864 --- [http-nio-8081-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 18:10:39.527 DEBUG 15864 --- [http-nio-8081-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 18:10:39.531 DEBUG 15864 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 18:10:47.228 DEBUG 15864 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/operateurs", parameters={}
+2021-06-23 18:10:47.267 DEBUG 15864 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/comptes?id=8", parameters={id:[8]}
+2021-06-23 18:10:47.259 DEBUG 15864 --- [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-06-23 18:10:47.275 DEBUG 15864 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.CompteController#getComptes(Long)
+2021-06-23 18:10:47.284 DEBUG 15864 --- [http-nio-8081-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2021-06-23 18:10:47.285 DEBUG 15864 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2021-06-23 18:10:47.290 DEBUG 15864 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2021-06-23 18:10:47.291 DEBUG 15864 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2021-06-23 18:10:47.295 DEBUG 15864 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 18:10:47.296 DEBUG 15864 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 18:10:47.297 DEBUG 15864 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Jun 23 18:10:47 WEST 2021, status=404, error=Not Found, path=/operateurs}]
+2021-06-23 18:10:47.299 DEBUG 15864 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2021-06-23 18:10:47.374 DEBUG 15864 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 18:10:47.380 DEBUG 15864 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 18:15:14.690 DEBUG 15864 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/comptes?id=8", parameters={id:[8]}
+2021-06-23 18:15:14.693 DEBUG 15864 --- [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.CompteController#getComptes(Long)
+2021-06-23 18:15:14.720 DEBUG 15864 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/operateur/all", parameters={}
+2021-06-23 18:15:14.721 DEBUG 15864 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.OperateurController#getAllOperateurs()
+2021-06-23 18:15:14.739 DEBUG 15864 --- [http-nio-8081-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 18:15:14.767 DEBUG 15864 --- [http-nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 18:15:14.783 DEBUG 15864 --- [http-nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Operateur(id=2, nom=IAM, email=iam@iam.ma, logo=iam.ma/logo.png, compte=Compte(id=6, numero=1950038 (truncated)...]
+2021-06-23 18:15:14.791 DEBUG 15864 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 18:15:14.831 DEBUG 15864 --- [http-nio-8081-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 18:15:14.834 DEBUG 15864 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 18:15:23.440 DEBUG 15864 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/client/5/comptes", parameters={}
+2021-06-23 18:15:23.446 DEBUG 15864 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.ClientController#getComptes(Long)
+2021-06-23 18:15:23.466 DEBUG 15864 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 18:15:23.542 DEBUG 15864 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 18:15:23.546 DEBUG 15864 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 18:15:34.230 DEBUG 15864 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/comptes?id=8", parameters={id:[8]}
+2021-06-23 18:15:34.246 DEBUG 15864 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.CompteController#getComptes(Long)
+2021-06-23 18:15:34.286 DEBUG 15864 --- [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 18:15:34.296 DEBUG 15864 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/operateur/all", parameters={}
+2021-06-23 18:15:34.296 DEBUG 15864 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.OperateurController#getAllOperateurs()
+2021-06-23 18:15:34.323 DEBUG 15864 --- [http-nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 18:15:34.373 DEBUG 15864 --- [http-nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Operateur(id=2, nom=IAM, email=iam@iam.ma, logo=iam.ma/logo.png, compte=Compte(id=6, numero=1950038 (truncated)...]
+2021-06-23 18:15:34.375 DEBUG 15864 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 18:15:34.469 DEBUG 15864 --- [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 18:15:34.474 DEBUG 15864 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 18:16:05.683 DEBUG 15864 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/client/2/comptes", parameters={}
+2021-06-23 18:16:05.686 DEBUG 15864 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.ClientController#getComptes(Long)
+2021-06-23 18:16:05.731 DEBUG 15864 --- [http-nio-8081-exec-1] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [ma.ensa.banki.exceptions.NotFoundException: Aucun client avec l'id 2 trouvé]
+2021-06-23 18:16:05.732 DEBUG 15864 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2021-06-23 18:16:05.733 DEBUG 15864 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2021-06-23 18:16:05.736 DEBUG 15864 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2021-06-23 18:16:05.740 DEBUG 15864 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 18:16:05.741 DEBUG 15864 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Jun 23 18:16:05 WEST 2021, status=404, error=Not Found, path=/client/2/comptes}]
+2021-06-23 18:16:05.747 DEBUG 15864 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2021-06-23 18:16:14.903 DEBUG 15864 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/operateur/all", parameters={}
+2021-06-23 18:16:14.909 DEBUG 15864 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.OperateurController#getAllOperateurs()
+2021-06-23 18:16:14.932 DEBUG 15864 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/comptes?id=8", parameters={id:[8]}
+2021-06-23 18:16:14.938 DEBUG 15864 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.CompteController#getComptes(Long)
+2021-06-23 18:16:14.962 DEBUG 15864 --- [http-nio-8081-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 18:16:14.970 DEBUG 15864 --- [http-nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 18:16:14.974 DEBUG 15864 --- [http-nio-8081-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Operateur(id=2, nom=IAM, email=iam@iam.ma, logo=iam.ma/logo.png, compte=Compte(id=6, numero=1950038 (truncated)...]
+2021-06-23 18:16:14.977 DEBUG 15864 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 18:16:15.039 DEBUG 15864 --- [http-nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 18:16:15.043 DEBUG 15864 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 18:16:49.135 DEBUG 15864 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/client/2/comptes", parameters={}
+2021-06-23 18:16:49.139 DEBUG 15864 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.ClientController#getComptes(Long)
+2021-06-23 18:16:49.147 DEBUG 15864 --- [http-nio-8081-exec-10] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [ma.ensa.banki.exceptions.NotFoundException: Aucun client avec l'id 2 trouvé]
+2021-06-23 18:16:49.147 DEBUG 15864 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2021-06-23 18:16:49.147 DEBUG 15864 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2021-06-23 18:16:49.151 DEBUG 15864 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2021-06-23 18:16:49.155 DEBUG 15864 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 18:16:49.155 DEBUG 15864 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Jun 23 18:16:49 WEST 2021, status=404, error=Not Found, path=/client/2/comptes}]
+2021-06-23 18:16:49.159 DEBUG 15864 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2021-06-23 18:18:22.157 DEBUG 15864 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/client/2/comptes", parameters={}
+2021-06-23 18:18:22.161 DEBUG 15864 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.ClientController#getComptes(Long)
+2021-06-23 18:18:22.173 DEBUG 15864 --- [http-nio-8081-exec-4] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [ma.ensa.banki.exceptions.NotFoundException: Aucun client avec l'id 2 trouvé]
+2021-06-23 18:18:22.173 DEBUG 15864 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2021-06-23 18:18:22.173 DEBUG 15864 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2021-06-23 18:18:22.173 DEBUG 15864 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2021-06-23 18:18:22.177 DEBUG 15864 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 18:18:22.177 DEBUG 15864 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Jun 23 18:18:22 WEST 2021, status=404, error=Not Found, path=/client/2/comptes}]
+2021-06-23 18:18:22.177 DEBUG 15864 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2021-06-23 18:20:23.413 DEBUG 15864 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/operateur/all", parameters={}
+2021-06-23 18:20:23.417 DEBUG 15864 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.OperateurController#getAllOperateurs()
+2021-06-23 18:20:23.431 DEBUG 15864 --- [http-nio-8081-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 18:20:23.445 DEBUG 15864 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/comptes?id=8", parameters={id:[8]}
+2021-06-23 18:20:23.445 DEBUG 15864 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.CompteController#getComptes(Long)
+2021-06-23 18:20:23.445 DEBUG 15864 --- [http-nio-8081-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Operateur(id=2, nom=IAM, email=iam@iam.ma, logo=iam.ma/logo.png, compte=Compte(id=6, numero=1950038 (truncated)...]
+2021-06-23 18:20:23.449 DEBUG 15864 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 18:20:23.465 DEBUG 15864 --- [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 18:20:23.537 DEBUG 15864 --- [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 18:20:23.541 DEBUG 15864 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 18:20:37.209 DEBUG 15864 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/client/2/comptes", parameters={}
+2021-06-23 18:20:37.209 DEBUG 15864 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.ClientController#getComptes(Long)
+2021-06-23 18:20:37.217 DEBUG 15864 --- [http-nio-8081-exec-2] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [ma.ensa.banki.exceptions.NotFoundException: Aucun client avec l'id 2 trouvé]
+2021-06-23 18:20:37.221 DEBUG 15864 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2021-06-23 18:20:37.221 DEBUG 15864 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2021-06-23 18:20:37.221 DEBUG 15864 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2021-06-23 18:20:37.225 DEBUG 15864 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 18:20:37.225 DEBUG 15864 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Jun 23 18:20:37 WEST 2021, status=404, error=Not Found, path=/client/2/comptes}]
+2021-06-23 18:20:37.229 DEBUG 15864 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2021-06-23 18:27:07.938 DEBUG 15864 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/client/2/comptes", parameters={}
+2021-06-23 18:27:07.950 DEBUG 15864 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.ClientController#getComptes(Long)
+2021-06-23 18:27:07.978 DEBUG 15864 --- [http-nio-8081-exec-10] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [ma.ensa.banki.exceptions.NotFoundException: Aucun client avec l'id 2 trouvé]
+2021-06-23 18:27:07.978 DEBUG 15864 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2021-06-23 18:27:07.982 DEBUG 15864 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2021-06-23 18:27:07.986 DEBUG 15864 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2021-06-23 18:27:07.994 DEBUG 15864 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 18:27:07.998 DEBUG 15864 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Jun 23 18:27:07 WEST 2021, status=404, error=Not Found, path=/client/2/comptes}]
+2021-06-23 18:27:08.002 DEBUG 15864 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2021-06-23 18:27:50.308 DEBUG 15864 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/client/2/comptes", parameters={}
+2021-06-23 18:27:50.308 DEBUG 15864 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.ClientController#getComptes(Long)
+2021-06-23 18:27:50.316 DEBUG 15864 --- [http-nio-8081-exec-5] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [ma.ensa.banki.exceptions.NotFoundException: Aucun client avec l'id 2 trouvé]
+2021-06-23 18:27:50.316 DEBUG 15864 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2021-06-23 18:27:50.320 DEBUG 15864 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2021-06-23 18:27:50.320 DEBUG 15864 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2021-06-23 18:27:50.324 DEBUG 15864 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 18:27:50.324 DEBUG 15864 --- [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Jun 23 18:27:50 WEST 2021, status=404, error=Not Found, path=/client/2/comptes}]
+2021-06-23 18:27:50.328 DEBUG 15864 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2021-06-23 23:16:01.575  INFO 2824 --- [main] ma.ensa.banki.BankiApplicationTests      : Starting BankiApplicationTests using Java 1.8.0_281 on PCDESKTOP with PID 2824 (started by PC in C:\Users\PC\Desktop\22222222222222224\PROJECT\BACKEND)
+2021-06-23 23:16:01.595  INFO 2824 --- [main] ma.ensa.banki.BankiApplicationTests      : No active profile set, falling back to default profiles: default
+2021-06-23 23:16:01.853 DEBUG 2824 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1cdc4c27
+2021-06-23 23:16:02.537  WARN 2824 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-06-23 23:16:06.742  INFO 2824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-23 23:16:07.401  INFO 2824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 595 ms. Found 14 JPA repository interfaces.
+2021-06-23 23:16:11.867  INFO 2824 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-23 23:16:14.524  INFO 2824 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-06-23 23:16:15.963  INFO 2824 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-23 23:16:18.153  INFO 2824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-23 23:16:18.822  INFO 2824 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-23 23:16:18.880  INFO 2824 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-06-23 23:16:19.531  WARN 2824 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000499: Using @AttributeOverride or @AttributeOverrides in conjunction with entity inheritance is not supported: ma.ensa.banki.entities.Admin. The overriding definitions are ignored.
+2021-06-23 23:16:19.636  WARN 2824 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000499: Using @AttributeOverride or @AttributeOverrides in conjunction with entity inheritance is not supported: ma.ensa.banki.entities.Agent. The overriding definitions are ignored.
+2021-06-23 23:16:19.643  WARN 2824 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000499: Using @AttributeOverride or @AttributeOverrides in conjunction with entity inheritance is not supported: ma.ensa.banki.entities.Client. The overriding definitions are ignored.
+2021-06-23 23:16:22.707  INFO 2824 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-23 23:16:22.740  INFO 2824 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-23 23:16:24.864  WARN 2824 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-23 23:16:30.309 DEBUG 2824 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 67 mappings in 'requestMappingHandlerMapping'
+2021-06-23 23:16:31.148  INFO 2824 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-23 23:16:32.648  INFO 2824 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@105fe81e, org.springframework.security.web.context.SecurityContextPersistenceFilter@57f89680, org.springframework.security.web.header.HeaderWriterFilter@194eae3e, org.springframework.web.filter.CorsFilter@af94b0b, org.springframework.security.web.authentication.logout.LogoutFilter@642614b7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4891d727, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6cb43fd3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@208185c0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@27575bcd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d202dc4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@641e67fa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1831447c, org.springframework.security.web.session.SessionManagementFilter@64186f60, org.springframework.security.web.access.ExceptionTranslationFilter@4cf15477, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@57a0c261]
+2021-06-23 23:16:33.919 DEBUG 2824 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-06-23 23:16:34.755 DEBUG 2824 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-06-23 23:16:34.860 DEBUG 2824 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-06-23 23:16:35.605  INFO 2824 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-06-23 23:16:35.722  INFO 2824 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-06-23 23:16:35.959  INFO 2824 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-06-23 23:16:36.595  INFO 2824 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAgentsUsingGET_1
+2021-06-23 23:16:36.619  INFO 2824 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByUsernameUsingGET_1
+2021-06-23 23:16:36.735  INFO 2824 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByUsernameUsingGET_2
+2021-06-23 23:16:36.745  INFO 2824 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getClientsUsingGET_1
+2021-06-23 23:16:36.817  INFO 2824 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getComptesUsingGET_1
+2021-06-23 23:16:37.058  INFO 2824 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllOperateursUsingGET_1
+2021-06-23 23:16:37.065  INFO 2824 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOperationsUsingGET_1
+2021-06-23 23:16:37.091  INFO 2824 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOperationsUsingGET_2
+2021-06-23 23:16:37.165  INFO 2824 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRechargesUsingGET_1
+2021-06-23 23:16:37.197  INFO 2824 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getVirementsUsingGET_1
+2021-06-23 23:16:37.215  INFO 2824 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addVirementUsingPOST_1
+2021-06-23 23:16:37.292  INFO 2824 --- [main] ma.ensa.banki.BankiApplicationTests      : Started BankiApplicationTests in 36.685 seconds (JVM running for 43.2)
+2021-06-23 23:16:37.304  INFO 2824 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-23 23:16:37.315  INFO 2824 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-23 23:16:48.922  INFO 20444 --- [main] ma.ensa.banki.BankiApplication           : Starting BankiApplication using Java 1.8.0_281 on PCDESKTOP with PID 20444 (C:\Users\PC\Desktop\22222222222222224\PROJECT\BACKEND\target\classes started by PC in C:\Users\PC\Desktop\22222222222222224\PROJECT\BACKEND)
+2021-06-23 23:16:48.929  INFO 20444 --- [main] ma.ensa.banki.BankiApplication           : No active profile set, falling back to default profiles: default
+2021-06-23 23:16:49.295  WARN 20444 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-06-23 23:16:51.366  INFO 20444 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-23 23:16:51.643  INFO 20444 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 247 ms. Found 14 JPA repository interfaces.
+2021-06-23 23:16:52.812  INFO 20444 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-06-23 23:16:52.832  INFO 20444 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-23 23:16:52.833  INFO 20444 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-23 23:16:54.092  INFO 20444 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-23 23:16:54.093  INFO 20444 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5060 ms
+2021-06-23 23:16:54.449  INFO 20444 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-23 23:16:54.528  INFO 20444 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-06-23 23:16:54.747  INFO 20444 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-23 23:16:55.066  INFO 20444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-23 23:16:55.274  INFO 20444 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-23 23:16:55.297  INFO 20444 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-06-23 23:16:55.624  WARN 20444 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000499: Using @AttributeOverride or @AttributeOverrides in conjunction with entity inheritance is not supported: ma.ensa.banki.entities.Admin. The overriding definitions are ignored.
+2021-06-23 23:16:55.671  WARN 20444 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000499: Using @AttributeOverride or @AttributeOverrides in conjunction with entity inheritance is not supported: ma.ensa.banki.entities.Agent. The overriding definitions are ignored.
+2021-06-23 23:16:55.675  WARN 20444 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000499: Using @AttributeOverride or @AttributeOverrides in conjunction with entity inheritance is not supported: ma.ensa.banki.entities.Client. The overriding definitions are ignored.
+2021-06-23 23:16:57.754  INFO 20444 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-23 23:16:57.783  INFO 20444 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-23 23:16:58.679  WARN 20444 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-23 23:17:00.348 DEBUG 20444 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 67 mappings in 'requestMappingHandlerMapping'
+2021-06-23 23:17:00.453  INFO 20444 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-23 23:17:00.836  INFO 20444 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4258106, org.springframework.security.web.context.SecurityContextPersistenceFilter@418d1c03, org.springframework.security.web.header.HeaderWriterFilter@5151accb, org.springframework.web.filter.CorsFilter@64ef2719, org.springframework.security.web.authentication.logout.LogoutFilter@13ebccd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2ccecae2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@20171cdc, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7b423f90, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@17d19538, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7305cfb1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3883b5e9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24f3fb87, org.springframework.security.web.session.SessionManagementFilter@7c56c911, org.springframework.security.web.access.ExceptionTranslationFilter@42b500aa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2d3bb944]
+2021-06-23 23:17:01.109 DEBUG 20444 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-06-23 23:17:01.196 DEBUG 20444 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-06-23 23:17:01.210 DEBUG 20444 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-06-23 23:17:01.343  INFO 20444 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-06-23 23:17:01.344  INFO 20444 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-06-23 23:17:01.669  INFO 20444 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-06-23 23:17:01.788  INFO 20444 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-06-23 23:17:02.067  INFO 20444 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAgentsUsingGET_1
+2021-06-23 23:17:02.070  INFO 20444 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByUsernameUsingGET_1
+2021-06-23 23:17:02.107  INFO 20444 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByUsernameUsingGET_2
+2021-06-23 23:17:02.109  INFO 20444 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getClientsUsingGET_1
+2021-06-23 23:17:02.146  INFO 20444 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getComptesUsingGET_1
+2021-06-23 23:17:02.239  INFO 20444 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllOperateursUsingGET_1
+2021-06-23 23:17:02.241  INFO 20444 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOperationsUsingGET_1
+2021-06-23 23:17:02.252  INFO 20444 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOperationsUsingGET_2
+2021-06-23 23:17:02.287  INFO 20444 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRechargesUsingGET_1
+2021-06-23 23:17:02.298  INFO 20444 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getVirementsUsingGET_1
+2021-06-23 23:17:02.310  INFO 20444 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addVirementUsingPOST_1
+2021-06-23 23:17:02.348  INFO 20444 --- [main] ma.ensa.banki.BankiApplication           : Started BankiApplication in 14.373 seconds (JVM running for 17.96)
+2021-06-23 23:17:02.350  INFO 20444 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-23 23:17:02.353  INFO 20444 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-23 23:17:14.361  INFO 20444 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-23 23:17:14.361  INFO 20444 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-23 23:17:14.362 DEBUG 20444 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-06-23 23:17:14.362 DEBUG 20444 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2021-06-23 23:17:14.362 DEBUG 20444 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2021-06-23 23:17:14.363 DEBUG 20444 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7bde704a
+2021-06-23 23:17:14.364 DEBUG 20444 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6da9541c
+2021-06-23 23:17:14.365 DEBUG 20444 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='true': request parameters and headers will be shown which may lead to unsafe logging of potentially sensitive data
+2021-06-23 23:17:14.365  INFO 20444 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2021-06-23 23:17:14.917 DEBUG 20444 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/client/username/majid", parameters={}
+2021-06-23 23:17:14.927 DEBUG 20444 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.ClientController#getByUsername(String)
+2021-06-23 23:17:15.028 DEBUG 20444 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:17:15.080 DEBUG 20444 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 23:17:15.112 DEBUG 20444 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:17:15.397 DEBUG 20444 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/client/5/comptes", parameters={}
+2021-06-23 23:17:15.398 DEBUG 20444 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.ClientController#getComptes(Long)
+2021-06-23 23:17:15.423 DEBUG 20444 --- [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:17:15.434 DEBUG 20444 --- [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 23:17:15.447 DEBUG 20444 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:17:36.121 DEBUG 20444 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/comptes?id=8", parameters={id:[8]}
+2021-06-23 23:17:36.121 DEBUG 20444 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/operateur/all", parameters={}
+2021-06-23 23:17:36.122 DEBUG 20444 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.OperateurController#getAllOperateurs()
+2021-06-23 23:17:36.123 DEBUG 20444 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.CompteController#getComptes(Long)
+2021-06-23 23:17:36.158 DEBUG 20444 --- [http-nio-8081-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:17:36.162 DEBUG 20444 --- [http-nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:17:36.179 DEBUG 20444 --- [http-nio-8081-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 23:17:36.181 DEBUG 20444 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:17:36.184 DEBUG 20444 --- [http-nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Operateur(id=2, nom=IAM, email=iam@iam.ma, logo=iam.ma/logo.png, compte=Compte(id=6, numero=1950038 (truncated)...]
+2021-06-23 23:17:36.189 DEBUG 20444 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:18:03.898 DEBUG 20444 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/client/2/comptes", parameters={}
+2021-06-23 23:18:03.905 DEBUG 20444 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.ClientController#getComptes(Long)
+2021-06-23 23:18:03.923 DEBUG 20444 --- [http-nio-8081-exec-4] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [ma.ensa.banki.exceptions.NotFoundException: Aucun client avec l'id 2 trouvé]
+2021-06-23 23:18:03.924 DEBUG 20444 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2021-06-23 23:18:03.927 DEBUG 20444 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2021-06-23 23:18:03.931 DEBUG 20444 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2021-06-23 23:18:03.945 DEBUG 20444 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:18:03.946 DEBUG 20444 --- [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Jun 23 23:18:03 WEST 2021, status=404, error=Not Found, path=/client/2/comptes}]
+2021-06-23 23:18:03.954 DEBUG 20444 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2021-06-23 23:23:50.627 DEBUG 20444 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/comptes?id=8", parameters={id:[8]}
+2021-06-23 23:23:50.628 DEBUG 20444 --- [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.CompteController#getComptes(Long)
+2021-06-23 23:23:50.687 DEBUG 20444 --- [http-nio-8081-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:23:50.695 DEBUG 20444 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/operateur/all", parameters={}
+2021-06-23 23:23:50.697 DEBUG 20444 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.OperateurController#getAllOperateurs()
+2021-06-23 23:23:50.703 DEBUG 20444 --- [http-nio-8081-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 23:23:50.706 DEBUG 20444 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:23:50.753 DEBUG 20444 --- [http-nio-8081-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:23:50.808 DEBUG 20444 --- [http-nio-8081-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Operateur(id=2, nom=IAM, email=iam@iam.ma, logo=iam.ma/logo.png, compte=Compte(id=6, numero=1950038 (truncated)...]
+2021-06-23 23:23:50.810 DEBUG 20444 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:24:01.712  INFO 20444 --- [http-nio-8081-exec-2] org.apache.tomcat.util.http.Parameters   : Invalid chunk starting at byte [0] and ending at byte [2] with a value of [=2] ignored
+ Note: further occurrences of Parameter errors will be logged at DEBUG level.
+2021-06-23 23:24:01.716 DEBUG 20444 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error?=2", parameters={}
+2021-06-23 23:24:01.718 DEBUG 20444 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2021-06-23 23:24:01.720 DEBUG 20444 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:24:01.720 DEBUG 20444 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Jun 23 23:24:01 WEST 2021, status=403, error=Forbidden, path=/clients}]
+2021-06-23 23:24:01.722 DEBUG 20444 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 403
+2021-06-23 23:25:35.421 DEBUG 20444 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/comptes?id=8", parameters={id:[8]}
+2021-06-23 23:25:35.427 DEBUG 20444 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.CompteController#getComptes(Long)
+2021-06-23 23:25:35.586 DEBUG 20444 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/operateur/all", parameters={}
+2021-06-23 23:25:35.600 DEBUG 20444 --- [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:25:35.591 DEBUG 20444 --- [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.OperateurController#getAllOperateurs()
+2021-06-23 23:25:35.654 DEBUG 20444 --- [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 23:25:35.656 DEBUG 20444 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:25:35.723 DEBUG 20444 --- [http-nio-8081-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:25:35.734 DEBUG 20444 --- [http-nio-8081-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Operateur(id=2, nom=IAM, email=iam@iam.ma, logo=iam.ma/logo.png, compte=Compte(id=6, numero=1950038 (truncated)...]
+2021-06-23 23:25:35.736 DEBUG 20444 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:25:49.338 DEBUG 20444 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/comptes?id=2", parameters={id:[2]}
+2021-06-23 23:25:49.340 DEBUG 20444 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.CompteController#getComptes(Long)
+2021-06-23 23:25:49.347 DEBUG 20444 --- [http-nio-8081-exec-10] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [ma.ensa.banki.exceptions.NotFoundException: Aucun compte avec l'id 2 trouvé]
+2021-06-23 23:25:49.347 DEBUG 20444 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2021-06-23 23:25:49.349 DEBUG 20444 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error?id=2", parameters={id:[2]}
+2021-06-23 23:25:49.349 DEBUG 20444 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2021-06-23 23:25:49.351 DEBUG 20444 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:25:49.351 DEBUG 20444 --- [http-nio-8081-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Jun 23 23:25:49 WEST 2021, status=404, error=Not Found, path=/comptes}]
+2021-06-23 23:25:49.353 DEBUG 20444 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2021-06-23 23:26:55.489 DEBUG 20444 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/comptes?id=2", parameters={id:[2]}
+2021-06-23 23:26:55.491 DEBUG 20444 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.CompteController#getComptes(Long)
+2021-06-23 23:26:55.495 DEBUG 20444 --- [http-nio-8081-exec-3] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [ma.ensa.banki.exceptions.NotFoundException: Aucun compte avec l'id 2 trouvé]
+2021-06-23 23:26:55.496 DEBUG 20444 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2021-06-23 23:26:55.497 DEBUG 20444 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error?id=2", parameters={id:[2]}
+2021-06-23 23:26:55.497 DEBUG 20444 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2021-06-23 23:26:55.498 DEBUG 20444 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:26:55.498 DEBUG 20444 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Jun 23 23:26:55 WEST 2021, status=404, error=Not Found, path=/comptes}]
+2021-06-23 23:26:55.500 DEBUG 20444 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2021-06-23 23:27:10.816 DEBUG 20444 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/comptes?id=8", parameters={id:[8]}
+2021-06-23 23:27:10.817 DEBUG 20444 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.CompteController#getComptes(Long)
+2021-06-23 23:27:10.840 DEBUG 20444 --- [http-nio-8081-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:27:10.856 DEBUG 20444 --- [http-nio-8081-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 23:27:10.857 DEBUG 20444 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:29:15.096 DEBUG 20444 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/comptes?id=8", parameters={id:[8]}
+2021-06-23 23:29:15.100 DEBUG 20444 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.CompteController#getComptes(Long)
+2021-06-23 23:29:15.103 DEBUG 20444 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/operateur/all", parameters={}
+2021-06-23 23:29:15.105 DEBUG 20444 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.OperateurController#getAllOperateurs()
+2021-06-23 23:29:15.114 DEBUG 20444 --- [http-nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:29:15.118 DEBUG 20444 --- [http-nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:29:15.133 DEBUG 20444 --- [http-nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 23:29:15.136 DEBUG 20444 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:29:15.156 DEBUG 20444 --- [http-nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Operateur(id=2, nom=IAM, email=iam@iam.ma, logo=iam.ma/logo.png, compte=Compte(id=6, numero=1950038 (truncated)...]
+2021-06-23 23:29:15.159 DEBUG 20444 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:31:07.660 DEBUG 20444 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/comptes?id=8", parameters={id:[8]}
+2021-06-23 23:31:07.663 DEBUG 20444 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.CompteController#getComptes(Long)
+2021-06-23 23:31:07.676 DEBUG 20444 --- [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:31:07.690 DEBUG 20444 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/operateur/all", parameters={}
+2021-06-23 23:31:07.692 DEBUG 20444 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.OperateurController#getAllOperateurs()
+2021-06-23 23:31:07.693 DEBUG 20444 --- [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 23:31:07.695 DEBUG 20444 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:31:07.731 DEBUG 20444 --- [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:31:07.743 DEBUG 20444 --- [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Operateur(id=2, nom=IAM, email=iam@iam.ma, logo=iam.ma/logo.png, compte=Compte(id=6, numero=1950038 (truncated)...]
+2021-06-23 23:31:07.746 DEBUG 20444 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:31:59.215 DEBUG 20444 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/comptes?id=8", parameters={id:[8]}
+2021-06-23 23:31:59.216 DEBUG 20444 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.CompteController#getComptes(Long)
+2021-06-23 23:31:59.229 DEBUG 20444 --- [http-nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:31:59.249 DEBUG 20444 --- [http-nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 23:31:59.252 DEBUG 20444 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:31:59.369 DEBUG 20444 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/operateur/all", parameters={}
+2021-06-23 23:31:59.371 DEBUG 20444 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.OperateurController#getAllOperateurs()
+2021-06-23 23:31:59.396 DEBUG 20444 --- [http-nio-8081-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:31:59.414 DEBUG 20444 --- [http-nio-8081-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Operateur(id=2, nom=IAM, email=iam@iam.ma, logo=iam.ma/logo.png, compte=Compte(id=6, numero=1950038 (truncated)...]
+2021-06-23 23:31:59.416 DEBUG 20444 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:32:16.535 DEBUG 20444 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/comptes?id=8", parameters={id:[8]}
+2021-06-23 23:32:16.537 DEBUG 20444 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.CompteController#getComptes(Long)
+2021-06-23 23:32:16.550 DEBUG 20444 --- [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:32:16.715 DEBUG 20444 --- [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 23:32:16.717 DEBUG 20444 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:33:11.206 DEBUG 20444 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/comptes?id=8", parameters={id:[8]}
+2021-06-23 23:33:11.221 DEBUG 20444 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.CompteController#getComptes(Long)
+2021-06-23 23:33:11.253 DEBUG 20444 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:33:11.267 DEBUG 20444 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 23:33:11.271 DEBUG 20444 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:33:11.303 DEBUG 20444 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/operateur/all", parameters={}
+2021-06-23 23:33:11.303 DEBUG 20444 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.OperateurController#getAllOperateurs()
+2021-06-23 23:33:11.310 DEBUG 20444 --- [http-nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:33:11.318 DEBUG 20444 --- [http-nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Operateur(id=2, nom=IAM, email=iam@iam.ma, logo=iam.ma/logo.png, compte=Compte(id=6, numero=1950038 (truncated)...]
+2021-06-23 23:33:11.320 DEBUG 20444 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:33:24.644 DEBUG 20444 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/comptes?id=8", parameters={id:[8]}
+2021-06-23 23:33:24.646 DEBUG 20444 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.CompteController#getComptes(Long)
+2021-06-23 23:33:24.661 DEBUG 20444 --- [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:33:24.686 DEBUG 20444 --- [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 23:33:24.688 DEBUG 20444 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:33:25.036 DEBUG 20444 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/devise/convert/EUR/EUR", parameters={}
+2021-06-23 23:33:25.038 DEBUG 20444 --- [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.DeviseController#getRate(String, String)
+2021-06-23 23:33:28.524 DEBUG 20444 --- [http-nio-8081-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:33:28.525 DEBUG 20444 --- [http-nio-8081-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [1.0]
+2021-06-23 23:33:28.526 DEBUG 20444 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:33:32.246 DEBUG 20444 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/comptes?id=8", parameters={id:[8]}
+2021-06-23 23:33:32.247 DEBUG 20444 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.CompteController#getComptes(Long)
+2021-06-23 23:33:32.262 DEBUG 20444 --- [http-nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:33:32.269 DEBUG 20444 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/operateur/all", parameters={}
+2021-06-23 23:33:32.286 DEBUG 20444 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.OperateurController#getAllOperateurs()
+2021-06-23 23:33:32.312 DEBUG 20444 --- [http-nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:33:32.328 DEBUG 20444 --- [http-nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 23:33:32.328 DEBUG 20444 --- [http-nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Operateur(id=2, nom=IAM, email=iam@iam.ma, logo=iam.ma/logo.png, compte=Compte(id=6, numero=1950038 (truncated)...]
+2021-06-23 23:33:32.330 DEBUG 20444 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:33:32.330 DEBUG 20444 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:33:46.317 DEBUG 20444 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/comptes?id=8", parameters={id:[8]}
+2021-06-23 23:33:46.319 DEBUG 20444 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.CompteController#getComptes(Long)
+2021-06-23 23:33:46.329 DEBUG 20444 --- [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:33:46.437 DEBUG 20444 --- [http-nio-8081-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 23:33:46.439 DEBUG 20444 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:33:47.082 DEBUG 20444 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/devise/convert/EUR/EUR", parameters={}
+2021-06-23 23:33:47.085 DEBUG 20444 --- [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.DeviseController#getRate(String, String)
+2021-06-23 23:33:47.610 DEBUG 20444 --- [http-nio-8081-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:33:47.611 DEBUG 20444 --- [http-nio-8081-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [1.0]
+2021-06-23 23:33:47.612 DEBUG 20444 --- [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:34:36.674 DEBUG 20444 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/comptes?id=8", parameters={id:[8]}
+2021-06-23 23:34:36.675 DEBUG 20444 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.CompteController#getComptes(Long)
+2021-06-23 23:34:36.682 DEBUG 20444 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/operateur/all", parameters={}
+2021-06-23 23:34:36.684 DEBUG 20444 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.OperateurController#getAllOperateurs()
+2021-06-23 23:34:36.699 DEBUG 20444 --- [http-nio-8081-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:34:36.701 DEBUG 20444 --- [http-nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:34:36.714 DEBUG 20444 --- [http-nio-8081-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Operateur(id=2, nom=IAM, email=iam@iam.ma, logo=iam.ma/logo.png, compte=Compte(id=6, numero=1950038 (truncated)...]
+2021-06-23 23:34:36.717 DEBUG 20444 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:34:36.764 DEBUG 20444 --- [http-nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 23:34:36.766 DEBUG 20444 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:34:48.866 DEBUG 20444 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/comptes?id=8", parameters={id:[8]}
+2021-06-23 23:34:48.867 DEBUG 20444 --- [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.CompteController#getComptes(Long)
+2021-06-23 23:34:48.882 DEBUG 20444 --- [http-nio-8081-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:34:48.932 DEBUG 20444 --- [http-nio-8081-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 23:34:48.937 DEBUG 20444 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:34:49.145 DEBUG 20444 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/devise/convert/EUR/EUR", parameters={}
+2021-06-23 23:34:49.149 DEBUG 20444 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.DeviseController#getRate(String, String)
+2021-06-23 23:34:51.049 DEBUG 20444 --- [http-nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:34:51.050 DEBUG 20444 --- [http-nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [1.0]
+2021-06-23 23:34:51.053 DEBUG 20444 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:35:40.139 DEBUG 20444 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/comptes?id=8", parameters={id:[8]}
+2021-06-23 23:35:40.140 DEBUG 20444 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.CompteController#getComptes(Long)
+2021-06-23 23:35:40.154 DEBUG 20444 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/operateur/all", parameters={}
+2021-06-23 23:35:40.156 DEBUG 20444 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.OperateurController#getAllOperateurs()
+2021-06-23 23:35:40.184 DEBUG 20444 --- [http-nio-8081-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:35:40.197 DEBUG 20444 --- [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:35:40.216 DEBUG 20444 --- [http-nio-8081-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Operateur(id=2, nom=IAM, email=iam@iam.ma, logo=iam.ma/logo.png, compte=Compte(id=6, numero=1950038 (truncated)...]
+2021-06-23 23:35:40.218 DEBUG 20444 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:35:40.250 DEBUG 20444 --- [http-nio-8081-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 23:35:40.252 DEBUG 20444 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:36:16.107 DEBUG 20444 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/comptes?id=8", parameters={id:[8]}
+2021-06-23 23:36:16.126 DEBUG 20444 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.CompteController#getComptes(Long)
+2021-06-23 23:36:16.130 DEBUG 20444 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/operateur/all", parameters={}
+2021-06-23 23:36:16.131 DEBUG 20444 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.OperateurController#getAllOperateurs()
+2021-06-23 23:36:16.158 DEBUG 20444 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:36:16.173 DEBUG 20444 --- [http-nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:36:16.175 DEBUG 20444 --- [http-nio-8081-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 23:36:16.176 DEBUG 20444 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:36:16.198 DEBUG 20444 --- [http-nio-8081-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [[Operateur(id=2, nom=IAM, email=iam@iam.ma, logo=iam.ma/logo.png, compte=Compte(id=6, numero=1950038 (truncated)...]
+2021-06-23 23:36:16.200 DEBUG 20444 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:36:31.187 DEBUG 20444 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/comptes?id=8", parameters={id:[8]}
+2021-06-23 23:36:31.189 DEBUG 20444 --- [http-nio-8081-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.CompteController#getComptes(Long)
+2021-06-23 23:36:31.195 DEBUG 20444 --- [http-nio-8081-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:36:31.206 DEBUG 20444 --- [http-nio-8081-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 23:36:31.207 DEBUG 20444 --- [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:36:31.429 DEBUG 20444 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/devise/convert/EUR/EUR", parameters={}
+2021-06-23 23:36:31.430 DEBUG 20444 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.DeviseController#getRate(String, String)
+2021-06-23 23:36:31.956 DEBUG 20444 --- [http-nio-8081-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:36:31.957 DEBUG 20444 --- [http-nio-8081-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [1.0]
+2021-06-23 23:36:31.958 DEBUG 20444 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:36:32.143 DEBUG 20444 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/recharges", parameters={}
+2021-06-23 23:36:32.144 DEBUG 20444 --- [http-nio-8081-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.RechargeController#addRecharge(Recharge)
+2021-06-23 23:36:32.240 DEBUG 20444 --- [http-nio-8081-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Recharge(id=null, sommeEnv=100.0, sommeRecu=100.0, devise=Devise(id=3, code=EUR, nom=Euro, creationD (truncated)...]
+2021-06-23 23:36:32.439 DEBUG 20444 --- [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2021-06-23 23:36:32.840 DEBUG 20444 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/compte/8/recharges", parameters={}
+2021-06-23 23:36:32.840 DEBUG 20444 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/compte/8/virements", parameters={}
+2021-06-23 23:36:32.842 DEBUG 20444 --- [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.CompteController#getVirements(Long)
+2021-06-23 23:36:32.843 DEBUG 20444 --- [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.CompteController#getRecharges(Long)
+2021-06-23 23:36:32.865 DEBUG 20444 --- [http-nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:36:32.867 DEBUG 20444 --- [http-nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:36:32.881 DEBUG 20444 --- [http-nio-8081-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 23:36:32.910 DEBUG 20444 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:36:32.929 DEBUG 20444 --- [http-nio-8081-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 23:36:32.934 DEBUG 20444 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:36:39.308 DEBUG 20444 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/client/5/comptes", parameters={}
+2021-06-23 23:36:39.310 DEBUG 20444 --- [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to ma.ensa.banki.controllers.ClientController#getComptes(Long)
+2021-06-23 23:36:39.325 DEBUG 20444 --- [http-nio-8081-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2021-06-23 23:36:39.334 DEBUG 20444 --- [http-nio-8081-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [java.lang.StackOverflowError]
+2021-06-23 23:36:39.336 DEBUG 20444 --- [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-06-23 23:40:49.188  INFO 21820 --- [main] ma.ensa.banki.BankiApplicationTests      : Starting BankiApplicationTests using Java 1.8.0_281 on PCDESKTOP with PID 21820 (started by PC in C:\Users\PC\Desktop\22222222222222224\PROJECT\BACKEND)
+2021-06-23 23:40:49.196  INFO 21820 --- [main] ma.ensa.banki.BankiApplicationTests      : No active profile set, falling back to default profiles: default
+2021-06-23 23:40:49.362 DEBUG 21820 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1cdc4c27
+2021-06-23 23:40:49.840  WARN 21820 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-06-23 23:40:52.597  INFO 21820 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-23 23:40:52.888  INFO 21820 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 264 ms. Found 14 JPA repository interfaces.
+2021-06-23 23:40:55.089  INFO 21820 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-23 23:40:55.530  INFO 21820 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-06-23 23:40:56.100  INFO 21820 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-23 23:40:57.683  INFO 21820 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-23 23:40:58.290  INFO 21820 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-23 23:40:58.356  INFO 21820 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-06-23 23:40:58.987  WARN 21820 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000499: Using @AttributeOverride or @AttributeOverrides in conjunction with entity inheritance is not supported: ma.ensa.banki.entities.Admin. The overriding definitions are ignored.
+2021-06-23 23:40:59.092  WARN 21820 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000499: Using @AttributeOverride or @AttributeOverrides in conjunction with entity inheritance is not supported: ma.ensa.banki.entities.Agent. The overriding definitions are ignored.
+2021-06-23 23:40:59.097  WARN 21820 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000499: Using @AttributeOverride or @AttributeOverrides in conjunction with entity inheritance is not supported: ma.ensa.banki.entities.Client. The overriding definitions are ignored.
+2021-06-23 23:41:02.271  INFO 21820 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-23 23:41:02.311  INFO 21820 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-23 23:41:03.880  WARN 21820 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-23 23:41:07.647 DEBUG 21820 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 67 mappings in 'requestMappingHandlerMapping'
+2021-06-23 23:41:08.154  INFO 21820 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-23 23:41:09.118  INFO 21820 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@787a4519, org.springframework.security.web.context.SecurityContextPersistenceFilter@de40aa1, org.springframework.security.web.header.HeaderWriterFilter@7a569672, org.springframework.web.filter.CorsFilter@627d5f1, org.springframework.security.web.authentication.logout.LogoutFilter@7aef21bb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@21ed4a51, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@641e67fa, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@105fe81e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@20a25f66, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@57f89680, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@29174dfe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@af94b0b, org.springframework.security.web.session.SessionManagementFilter@194eae3e, org.springframework.security.web.access.ExceptionTranslationFilter@63551c66, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@51b41740]
+2021-06-23 23:41:10.162 DEBUG 21820 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-06-23 23:41:10.392 DEBUG 21820 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-06-23 23:41:10.425 DEBUG 21820 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-06-23 23:41:10.831  INFO 21820 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-06-23 23:41:10.901  INFO 21820 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-06-23 23:41:11.094  INFO 21820 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-06-23 23:41:11.613  INFO 21820 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAgentsUsingGET_1
+2021-06-23 23:41:11.620  INFO 21820 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByUsernameUsingGET_1
+2021-06-23 23:41:11.665  INFO 21820 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByUsernameUsingGET_2
+2021-06-23 23:41:11.671  INFO 21820 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getClientsUsingGET_1
+2021-06-23 23:41:11.711  INFO 21820 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getComptesUsingGET_1
+2021-06-23 23:41:11.890  INFO 21820 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllOperateursUsingGET_1
+2021-06-23 23:41:11.901  INFO 21820 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOperationsUsingGET_1
+2021-06-23 23:41:11.932  INFO 21820 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOperationsUsingGET_2
+2021-06-23 23:41:11.980  INFO 21820 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRechargesUsingGET_1
+2021-06-23 23:41:11.996  INFO 21820 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getVirementsUsingGET_1
+2021-06-23 23:41:12.009  INFO 21820 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addVirementUsingPOST_1
+2021-06-23 23:41:12.072  INFO 21820 --- [main] ma.ensa.banki.BankiApplicationTests      : Started BankiApplicationTests in 23.809 seconds (JVM running for 27.192)
+2021-06-23 23:41:12.076  INFO 21820 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-23 23:41:12.082  INFO 21820 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-06-23 23:41:21.881  INFO 4344 --- [main] ma.ensa.banki.BankiApplication           : Starting BankiApplication using Java 1.8.0_281 on PCDESKTOP with PID 4344 (C:\Users\PC\Desktop\22222222222222224\PROJECT\BACKEND\target\classes started by PC in C:\Users\PC\Desktop\22222222222222224\PROJECT\BACKEND)
+2021-06-23 23:41:21.887  INFO 4344 --- [main] ma.ensa.banki.BankiApplication           : No active profile set, falling back to default profiles: default
+2021-06-23 23:41:22.200  WARN 4344 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-06-23 23:41:24.842  INFO 4344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-23 23:41:25.231  INFO 4344 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 366 ms. Found 14 JPA repository interfaces.
+2021-06-23 23:41:26.915  INFO 4344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-06-23 23:41:26.934  INFO 4344 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-23 23:41:26.935  INFO 4344 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-23 23:41:27.190  INFO 4344 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-23 23:41:27.191  INFO 4344 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5202 ms
+2021-06-23 23:41:27.627  INFO 4344 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-23 23:41:28.687  INFO 4344 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-06-23 23:41:28.999  INFO 4344 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-23 23:41:29.447  INFO 4344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-23 23:41:29.727  INFO 4344 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-23 23:41:29.755  INFO 4344 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2021-06-23 23:41:30.156  WARN 4344 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000499: Using @AttributeOverride or @AttributeOverrides in conjunction with entity inheritance is not supported: ma.ensa.banki.entities.Admin. The overriding definitions are ignored.
+2021-06-23 23:41:30.217  WARN 4344 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000499: Using @AttributeOverride or @AttributeOverrides in conjunction with entity inheritance is not supported: ma.ensa.banki.entities.Agent. The overriding definitions are ignored.
+2021-06-23 23:41:30.221  WARN 4344 --- [main] org.hibernate.cfg.AnnotationBinder       : HHH000499: Using @AttributeOverride or @AttributeOverrides in conjunction with entity inheritance is not supported: ma.ensa.banki.entities.Client. The overriding definitions are ignored.
+2021-06-23 23:41:32.500  INFO 4344 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-23 23:41:32.526  INFO 4344 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-23 23:41:33.458  WARN 4344 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-23 23:41:35.238 DEBUG 4344 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 67 mappings in 'requestMappingHandlerMapping'
+2021-06-23 23:41:35.360  INFO 4344 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-23 23:41:35.728  INFO 4344 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6ca367aa, org.springframework.security.web.context.SecurityContextPersistenceFilter@77fb1002, org.springframework.security.web.header.HeaderWriterFilter@4ea43d4d, org.springframework.web.filter.CorsFilter@30ed4034, org.springframework.security.web.authentication.logout.LogoutFilter@796fe2b5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3a917017, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3dee3a6c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1700d089, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1f57666b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@24cbf894, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@28d56028, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77e6053, org.springframework.security.web.session.SessionManagementFilter@2ee095c9, org.springframework.security.web.access.ExceptionTranslationFilter@5bccef9f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3ca3eba2]
+2021-06-23 23:41:36.052 DEBUG 4344 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-06-23 23:41:36.199 DEBUG 4344 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-06-23 23:41:36.221 DEBUG 4344 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-06-23 23:41:36.468  INFO 4344 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-06-23 23:41:36.471  INFO 4344 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-06-23 23:41:36.781  INFO 4344 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-06-23 23:41:36.869  INFO 4344 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-06-23 23:41:37.186  INFO 4344 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAgentsUsingGET_1
+2021-06-23 23:41:37.191  INFO 4344 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByUsernameUsingGET_1
+2021-06-23 23:41:37.223  INFO 4344 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getByUsernameUsingGET_2
+2021-06-23 23:41:37.225  INFO 4344 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getClientsUsingGET_1
+2021-06-23 23:41:37.249  INFO 4344 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getComptesUsingGET_1
+2021-06-23 23:41:37.334  INFO 4344 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllOperateursUsingGET_1
+2021-06-23 23:41:37.337  INFO 4344 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOperationsUsingGET_1
+2021-06-23 23:41:37.348  INFO 4344 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getOperationsUsingGET_2
+2021-06-23 23:41:37.378  INFO 4344 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getRechargesUsingGET_1
+2021-06-23 23:41:37.391  INFO 4344 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getVirementsUsingGET_1
+2021-06-23 23:41:37.402  INFO 4344 --- [main] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addVirementUsingPOST_1
+2021-06-23 23:41:37.447  INFO 4344 --- [main] ma.ensa.banki.BankiApplication           : Started BankiApplication in 16.77 seconds (JVM running for 20.855)
+2021-06-23 23:41:37.450  INFO 4344 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
+2021-06-23 23:41:37.454  INFO 4344 --- [main] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
